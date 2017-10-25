@@ -37,6 +37,7 @@ h2 {
     font-family: 'Nexa_Free_Bold', sans-serif;
     font-size: 24px;
     color: #009FE3;
+    margin-left: 32px;
 }
 
 section~p,
@@ -223,7 +224,8 @@ section:first-of-type {
     font-size: 16px;
 }
 
-#reasons span:nth-of-type(2) {
+#reasons span:nth-of-type(2),
+#faqlarge span:nth-of-type(2) {
     /* learn more */
     color: #009FE3;
     font-family: 'Nexa_Free_Bold', sans-serif;
@@ -343,6 +345,25 @@ section:first-of-type {
     /* end accordion styles */
 
 /* end Faq*/
+
+/* CONTACT */
+#contact {
+    background-color: #009FE3;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+#contact form {
+    background: transparent;
+    width: 343px;
+}
+/* end contact */
+
+/* OPERATOR */
+
+/* end Operator */
 
 /* ICONS */
 .numbers {
