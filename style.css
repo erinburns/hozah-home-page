@@ -1,0 +1,409 @@
+
+header { 
+    background-image: url(assets/images/hozah-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 2.5%;
+}
+
+.header-cont {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* TYPOGRAPHY */
+/* import Nexa font */
+@font-face {
+    font-family: 'Nexa_Free_Bold';
+    src: url('assets/fonts/Nexa-Bold-Free-Webfont/Webfonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+         url('assets/fonts/Nexa-Bold-Free-Webfont/Webfonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header p {
+    font-family: 'Nexa_Free_Bold', sans-serif;
+}
+
+h1 {
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+h2 {
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    font-size: 24px;
+    color: #009FE3;
+}
+
+section~p,
+#why div p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+}
+
+form p {
+    text-align: center;
+    padding-top: 3px;
+    font-size: 18px;
+}
+
+/* end typography styles */
+
+/* NAVIGATION */
+.nav-cont {
+    height: 20px;
+    padding: 2.5%;
+}
+
+.login-signup {
+    display: inline;
+    width: 40%;
+    float: right;
+}
+
+.logo {
+    width: 113.09px;
+    height: 32px;
+}
+
+.login-signup {
+    display: inline;
+}
+
+.login-link {
+    /* Login */
+    /* left: 52.8%;
+    right: 34.93%;
+    top: 32.81%;
+    bottom: 35.94%; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.signup-link {
+    /* signup button */ 
+    padding: 5px 7px 5px 7px;
+    /* left: 67.47%;
+    right: 13.33%;
+    top: 25%;
+    bottom: 25%;*/
+    width: 72px;
+    height: 32px;
+    background: #00E399;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* Sign up link */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+}
+
+.nav-link:nth-of-type(2) { 
+    /* Sign up link */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+}
+/* end NAV */
+
+/* HEADER CONTENT */
+.col-lg div:nth-of-type(1)  p:nth-of-type(1) {
+/* No cash, no tickets, no frustrating apps: */
+    /* left: calc(50% - 343px/2); 
+    top: 83px; */
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+}
+
+.col-lg:first-of-type div:nth-of-type(2)  p:nth-of-type(1) {
+    /* Simply park and let Hozah take care of the rest! */
+    width: 343px;
+    height: 50px;
+    /* left: calc(50% - 343px/2); */
+    top: 113px;
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.col-lg div:nth-of-type(1) { 
+    padding-top: 35px;
+}
+
+.col-lg div:nth-of-type(3) p {
+    /* header learn more */
+    text-decoration: underline;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+form {
+    /* form */
+    height: auto;
+    background: #F9F9F9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+form button {
+    width: 100%;
+    height: auto;
+    left: 36px;
+    right: 36px;
+    top: 560px;
+    background: #00E399; /* green */
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    font-size: 16px;
+}
+
+
+input {
+    width: 90%;
+    height: 48px;
+    padding-bottom: 20px;
+}
+
+input:nth-of-type(1) {
+    padding-top: 11px;
+}
+
+p img:nth-of-type(1) {
+    margin-right: 23px;
+}
+
+/* p img:nth-of-type(2) {
+    margin-right: 24px;
+} *
+
+p img:nth-of-type(3) {
+    margin-right: 10px;
+}
+
+p img:nth-of-type(4) {
+    margin-right: 37px;
+}
+
+/* WHY */
+section:first-of-type {
+    background: #F9F9F9;
+    padding-top: 24px;
+}
+
+.reasons {
+    color: #333333;
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    font-size: 16px;
+}
+
+#reasons span:nth-of-type(2) {
+    /* learn more */
+    color: #009FE3;
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    font-size: 16px;
+    margin-left: 67px;
+    text-decoration: underline;
+}
+/* end Why */
+
+/* FAQ */
+#faqsmall {
+    background-color: #F9F9F9;
+}
+
+#faqlarge {
+    display: none;
+}
+
+#faqlarge h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    color: #333333;
+    margin-left: 32px;
+}
+
+#faqlarge div p
+/* .faqleft div p,
+.faqright div p */ {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    color: #666666;
+    margin-left: 32px;
+}
+
+    /* accordion styles */
+    .tab {
+      position: relative;
+      margin-bottom: 1px;
+      width: 100%;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    #accordion div input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    #accordion label {
+        position: relative;
+        display: block;
+        padding: 0 0 0 1em;
+        font-weight: bold;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;   
+        color: #333333;
+        cursor: pointer;
+    }
+
+    .blue label {
+      background: #F9F9F9;
+    }
+
+    .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        background: #1abc9c;
+        -webkit-transition: max-height .35s;
+        -o-transition: max-height .35s;
+        transition: max-height .35s;
+    }
+
+    .blue .tab-content {
+        background: #F9F9F9;
+        color: #333333;
+    }
+
+    .tab-content p {
+        margin: 1em;
+    }
+    /* :checked */
+    input:checked ~ .tab-content {
+        max-height: 10em;
+    }
+    /* Icon */
+    label::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 3em;
+      height: 3em;
+      line-height: 3;
+      text-align: center;
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s;
+    }
+    
+    input[type=radio] + label::after {
+        content: "\25BE";
+        color: #999999;
+    }
+    
+    input[type=radio]:checked + label::after {
+        transform: rotateX(180deg);
+        color: #333333;
+    }
+    /* end accordion styles */
+
+/* end Faq*/
+
+/* ICONS */
+.numbers {
+    width: 48px;
+    height: 48px;
+}
+
+/* IMAGES */
+.howpic {
+    height: 210px;
+    width: 375px;
+}
+
+/* MEDIA QUERIES */
+    /* med - tablet */
+@media screen and (min-width: 768px) {
+    /* move how it works to center */
+    #how h2 {
+        text-align: center;
+    }  
+    
+    #reasons span:nth-of-type(2) {
+        /* learn more */
+        margin-left: 11px;
+    }
+    
+    /* faq MQs */
+    #faqsmall {
+        /* hide accordion */
+        display: none;
+    }
+    
+    #faqlarge {
+        display: block;
+        background-color: #F9F9F9;
+        height: 100%;
+    }
+    
+    .faqleft {
+        width: 50%;
+        float: left;
+        background-color: #F9F9F9;
+    }
+    
+    .faqright {
+        float: right;
+        width: 50%;
+        background-color: #F9F9F9;
+    }
+    
+    #faqlarge p {
+        width: 340px;
+    }
+} /* end med-tablet MQ */
+    
+    /* large- desktop */
+@media screen and (min-width: 1440px) {
+    #faqlarge p {
+        width: 569px;
+    }
+    
+} /* end large- desktop MQ  */
+
+/* end Media Queries */
