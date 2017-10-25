@@ -224,8 +224,9 @@ section:first-of-type {
     font-size: 16px;
 }
 
-#reasons span:nth-of-type(2),
-#faqlarge span:nth-of-type(2) {
+#reasons p span a,
+#faqlarge span:nth-of-type(2),
+#operator span:nth-of-type(2){
     /* learn more */
     color: #009FE3;
     font-family: 'Nexa_Free_Bold', sans-serif;
@@ -313,11 +314,18 @@ section:first-of-type {
 
     .tab-content p {
         margin: 1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        color: #666666;
     }
+
     /* :checked */
     input:checked ~ .tab-content {
         max-height: 10em;
     }
+
     /* Icon */
     label::after {
       position: absolute;
@@ -362,8 +370,44 @@ section:first-of-type {
 /* end contact */
 
 /* OPERATOR */
+#operator {
+    background-color: #3A3A3A;
+    height: 76px;
+}
+
+#operator p {
+    text-align: center;
+    padding: 32px 0 32px 0;
+}
+
+#operator p span:first-of-type {
+    color: #fff;
+}
+
+#operator p span a {
+    color: #009FE3;
+}
 
 /* end Operator */
+
+/* FOOTER */
+footer {
+    background-color: #333333;
+    height: 112px;
+}
+
+footer div p {
+    width: 343px;
+    color: #999999;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 16px 23px 16px;
+}
+
+/* end Footer */
 
 /* ICONS */
 .numbers {
@@ -417,12 +461,29 @@ section:first-of-type {
     #faqlarge p {
         width: 340px;
     }
+    
+    /* contact MQs */
+    #contact h2, 
+    #contact p {
+        text-align: center;
+    }
+    
+    /* Footer MQs */
+    footer div p {
+        width: 461px;
+    }
+    
 } /* end med-tablet MQ */
     
     /* large- desktop */
 @media screen and (min-width: 1440px) {
     #faqlarge p {
         width: 569px;
+    }
+    
+    /* Footer MQs */
+    footer div p {
+        width: 1170px;
     }
     
 } /* end large- desktop MQ  */
