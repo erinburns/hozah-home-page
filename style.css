@@ -157,7 +157,7 @@ header {
     color: #333333;
 }
 
-.col-lg:first-of-type div:nth-of-type(2)  p:nth-of-type(1) {
+.col-lg:first-of-type div:nth-of-type(2)  h1 {
     /* Simply park and let Hozah take care of the rest! */
     width: 343px;
     height: 50px;
@@ -172,6 +172,7 @@ header {
 
 .col-lg div:nth-of-type(1) { 
     padding-top: 35px;
+    margin: 0 auto;
 }
 
 .col-lg div:nth-of-type(3) p {
@@ -187,8 +188,10 @@ form {
     background: #F9F9F9;
     border-radius: 5px;
     padding: 20px;
-    margin: 0 auto;
+    margin: 0 auto; 
     display: block;
+    max-width: 343px; 
+    /* max-width: 92%; */
 }
 
 form button {
@@ -462,6 +465,18 @@ footer div p {
         width: 340px;
     }
     
+    .col-lg:first-of-type div:nth-of-type(2)  h1 {
+    /* Simply park and let Hozah take care of the rest! */
+    width: 343px;
+    height: 50px;
+    /* left: calc(50% - 343px/2); */
+    top: 113px;
+    font-family: 'Nexa_Free_Bold', sans-serif;
+    line-height: 32px;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
     /* move how it works to center */
     #howlarge {
         display: none;
