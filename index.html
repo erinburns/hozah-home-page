@@ -15,45 +15,47 @@
     <body>
         <div> <!-- body container -->
             <header>
-                <div class="header-cont"> <!--  header content container-->
+                <div> <!--  class="header-cont" header content container-->
                     <div class="nav-cont">
-                        <a class="branding" href="http://www.hozah.com/">
-                            <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo">
-                        </a>
-                        
-                        <div class="login-signup"> <!-- TODO: float this right on large, left on small -->
-                            <a class="login-link" href="#">Login</a> 
-                            <a class="signup-link" href="#">Sign up</a>
+                    <a class="branding" href="http://www.hozah.com/">
+                        <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo">
+                    </a>
+                    <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent;">
+                        <a class="navbar-brand" href="http://www.hozah.com/"></a>
+                        <div> <!-- class="nav-cont" -->
+                            <div class="login-signup"> <!-- TODO: float this right on large, left on small -->
+                                <a class="login-link" href="#">Login</a> 
+                                <a class="signup-link" href="#">Sign up</a>
+                            </div> 
                         </div>
-                    </div>
-                    
-                    <!-- hamburger menu -->
-                    <nav class="navbar navbar-expand-lg">
-                       <!--  <div class="collapse navbar-collapse" id="navbarNav"> -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#why">Why use Hozah?</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#how">How it works</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#faq">FAQs</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact us</a>
-                                  </li>
-                                </ul>
-                            </div>
-                       <!-- </div> -->
+                        
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#why">Why use Hozah?</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#how">How it works</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact us</a>
+                          </li>
+                        </ul>
+                        <span class="navbar-text">
+                          <!-- Navbar text with an inline element -->
+                        </span>
+                      </div>
                     </nav>
                     
-                <div class="row container"> <!-- flex container -->
-                    <div class="col-lg"> <!-- text container --> 
+                <div class="container"> <!-- flex container -->
+                    <div class="row container"> <!-- row container -->
+                    <div class="col-lg"> <!--  text container --> 
                         <div>
                             <p> No cash, no tickets, no frustrating apps: </p> 
                         </div>
@@ -63,7 +65,8 @@
                         </div>
                         
                         <div>
-                            <p>Learn more! <!-- down triangle --> <span><svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <p>Learn more! 
+                                <!-- down triangle --> <span><svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Polygon</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(-456 144)">
@@ -81,7 +84,7 @@
                     
                     <div class="col-lg"> <!-- form  container -->
                         <form id="headerform">
-                            <p>Sign up for free!</p>
+                            <p>Sign up for free</p>
                              <div class="form-group">
                                 <input type="text" class="form-control" id="firstname" placeholder="First name">
                               </div>
@@ -97,6 +100,7 @@
                               <button type="submit" class="btn">Continue</button> 
                         </form>
                     </div> <!-- end form  container -->
+                    </div><!-- row container -->
                 </div> <!-- end flex container -->
             </div> <!-- end header content container-->
             </header>
@@ -113,11 +117,27 @@
 
                     <div class="col-lg"> <!-- bullets container -->
                         <div class="row">
-                            <div class="col-sm"><p><img src="assets/images/cash.png" alt="cash icon"> No need to carry cash</p> </div>
-                            <div class="col-sm"><p><img src="assets/images/clock.png" alt="clock icon">No waiting at the ticket machine</p> </div>
+                            <div class="col-sm">
+                                <p><img src="assets/images/cash.png" alt="cash icon">
+                                    No need to carry cash
+                                </p> 
+                            </div>
+                            <div class="col-sm">
+                                <p><img src="assets/images/clock.png" alt="clock icon">
+                                    No waiting at the ticket machine
+                                </p> 
+                            </div>
                             <div class="w-100"></div>
-                            <div class="col-sm"><p><img src="assets/images/mobile.png" alt="mobile icon">No need to download an app</p> </div>
-                            <div class="col-sm"><p><img src="assets/images/hicon.png" alt="H with tick mark icon">Simply park and go</p>  </div> <!-- TODO: make bold -->
+                            <div class="col-sm">
+                                <p><img src="assets/images/mobile.png" alt="mobile icon">
+                                    No need to download an app
+                                </p> 
+                            </div>
+                            <div class="col-sm">
+                                <p><img src="assets/images/hicon.png" alt="H with tick mark icon">
+                                    Simply park and go
+                                </p>  
+                            </div> <!-- TODO: make bold -->
                         </div>
                     </div> <!-- end bullets container -->
                 </div> <!-- end flex container -->
@@ -144,36 +164,65 @@
                         </span>
                     </p>
                 </div> 
-            </section> 
+            </section> <!-- end #why -->
             
-            <section id="how">
-                <div class="container">
+            <section class="cont" id="howsmall">
+                <div>
                     <h2>How it works</h2>
                 </div>
                 
-                <div class="container">
-                      <div class="row flex-md-row-reverse">
-                          <div class="col-md">
+                <div>
+                  <div class="row">
+                      <div class="col-md">
+                          <img src="assets/images/one.png" alt="one" class="numbers">
+                          <p>Drivers sign up to Hozah, providing number plate and payment details</p>
+                      </div>
+                      <div class="col-md"><img src="assets/images/laptop.png" class="howpic"></div><br>
+                    </div>
+
+                    <div class="row flex-md-row-reverse">
+                        <div class="col-md">
+                            <p><img src="assets/images/two.png" alt="two" class="numbers">ANPR cameras detect Hozah users entering and exiting car parks</p>
+                        </div>
+                        <div class="col-md"><img src="assets/images/cars.png" class="howpic"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md">
+                            <p><img src="assets/images/three.png" alt="three" class="numbers">Hozah automatically charges drivers for length-of-stay, and then sends the parking fee to the car park owner/operator</p>
+                        </div>
+                        <div class="col-md"><img src="assets/images/carpark.png" class="howpic"></div><br>
+                    </div>
+                </div>
+            </section>
+                
+            <section id="howlarge" class="container">
+                <div>
+                    <h2>How it works</h2>
+                </div>
+
+                <div> 
+                      <div class="d-flex flex-row">
+                          <div class="p-2">
+                              <img src="assets/images/laptop.png" class="howpic">
                               <p><img src="assets/images/one.png" alt="one" class="numbers">Drivers sign up to Hozah, providing number plate and payment details</p>
-                          </div>
-                          <div class="col-md"><img src="assets/images/laptop.png" class="howpic"></div><br>
                         </div>
 
-                        <div class="row">
-                            <div class="col-md">
+                        <div class="d-flex flex-row">
+                            <div class="p-2">
+                                <img src="assets/images/cars.png" class="howpic">
                                 <p><img src="assets/images/two.png" alt="two" class="numbers">ANPR cameras detect Hozah users entering and exiting car parks</p>
                             </div>
-                            <div class="col-md"><img src="assets/images/cars.png" class="howpic"></div>
                         </div>
 
-                        <div class="row flex-md-row-reverse">
-                            <div class="col-md">
+                        <div class="d-flex flex-row">
+                            <div class="p-2">
+                                <img src="assets/images/carpark.png" class="howpic">
                                 <p><img src="assets/images/three.png" alt="three" class="numbers">Hozah automatically charges drivers for length-of-stay, and then sends the parking fee to the car park owner/operator</p>
                             </div>
-                            <div class="col-md"><img src="assets/images/carpark.png" class="howpic"></div><br>
                         </div>
                     </div>
-            </section>
+        </section>
             
             <section id="faqsmall">
                 <div class="container">

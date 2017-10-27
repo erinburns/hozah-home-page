@@ -50,6 +50,26 @@ form p {
 
 /* end typography styles */
 
+/* IMAGES & ICONS */
+.numbers {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 15px;
+}
+
+.logo {
+    width: 113.09px;
+    height: 32px;
+}
+
+.howpic {
+    height: auto;
+    width: 100%;
+}
+
+/* end img & icons */
+
 /* NAVIGATION */
 nav {
     display: inline-block;
@@ -65,9 +85,9 @@ nav {
 }
 
 .nav-cont {
-    height: 20px;
-    padding: 2.5%;
+    height: auto;
     width: auto;
+    padding: 2.5%;
     /* display: flex;
     flex-direction: row; */
 }
@@ -75,11 +95,6 @@ nav {
 .login-signup {
     display: inline;
     width: auto;
-}
-
-.logo {
-    width: 113.09px;
-    height: 32px;
 }
 
 .login-link {
@@ -146,9 +161,14 @@ header {
     width: 90%;
 }
 
-.col-lg div:nth-of-type(1)  p:nth-of-type(1) {
+.col-lg:first-of-type div:nth-of-type(1) { 
+    padding-top: 35px;
+    margin: 0 auto;
+}
+
+.col-lg:first-of-type div:nth-of-type(1) p {
 /* No cash, no tickets, no frustrating apps: */
-    /* left: calc(50% - 343px/2); 
+    /*  left: calc(50% - 343px/2); 
     top: 83px; */
     font-family: 'Nexa_Free_Bold', sans-serif;
     line-height: 24px;
@@ -159,10 +179,10 @@ header {
 
 .col-lg:first-of-type div:nth-of-type(2)  h1 {
     /* Simply park and let Hozah take care of the rest! */
-    width: 343px;
-    height: 50px;
-    /* left: calc(50% - 343px/2); */
-    top: 113px;
+    /* width: 343px;
+     height: 50px;
+     left: calc(50% - 343px/2); 
+    top: 113px; */
     font-family: 'Nexa_Free_Bold', sans-serif;
     line-height: 32px;
     font-size: 24px;
@@ -170,12 +190,8 @@ header {
     color: #FFFFFF;
 }
 
-.col-lg div:nth-of-type(1) { 
-    padding-top: 35px;
-    margin: 0 auto;
-}
 
-.col-lg div:nth-of-type(3) p {
+.col-lg:first-of-type div:nth-of-type(3) p {
     /* header learn more */
     text-decoration: underline;
     color: #FFFFFF;
@@ -218,8 +234,9 @@ input:nth-of-type(1) {
     padding-top: 11px;
 }
 
-#why p img:nth-of-type(1) {
-    margin-right: 23px;
+#why img {
+    margin-right: 25px;
+    float: left;
 }
 
 /* p img:nth-of-type(2) {
@@ -259,6 +276,15 @@ section:first-of-type {
 /* end Why */
 
 /* HOW */
+#howsmall p,
+#howlarge p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    width: 90%;
+}
+
 #howlarge {
     display: none;
 }
@@ -439,19 +465,8 @@ footer div p {
 
 /* end Footer */
 
-/* ICONS */
-.numbers {
-    width: 48px;
-    height: 48px;
-}
 
-/* IMAGES */
-.howpic {
-    height: 210px;
-    width: 375px;
-}
-
-/* MEDIA QUERIES */
+/* ---- MEDIA QUERIES ---- */
     /* med - tablet */
 @media screen and (min-width: 768px) {
     /* header */
@@ -467,16 +482,23 @@ footer div p {
     
     .col-lg:first-of-type div:nth-of-type(2)  h1 {
     /* Simply park and let Hozah take care of the rest! */
-    width: 343px;
-    height: 50px;
-    /* left: calc(50% - 343px/2); */
-    top: 113px;
-    font-family: 'Nexa_Free_Bold', sans-serif;
-    line-height: 32px;
-    font-size: 24px;
-    text-align: center;
-    color: #FFFFFF;
-}
+        width: 343px;
+        height: 50px;
+        left: calc(50% - 343px/2);
+        top: 113px;
+        font-family: 'Nexa_Free_Bold', sans-serif;
+        line-height: 32px;
+        font-size: 24px;
+        text-align: center;
+        color: #FFFFFF;    
+    }
+    
+    /* Why */
+    #why div p {
+        width: auto;
+    }
+    
+    /* How MQ */
     /* move how it works to center */
     #howlarge {
         display: none;
@@ -485,6 +507,19 @@ footer div p {
     #how h2 {
         text-align: center;
     }  
+    
+    .howpic {
+        max-width: 340px;
+    } 
+    
+    #howsmall p {
+        width: 70%;
+    }
+    
+    #howsmall div {
+        margin: 0 auto;
+        width: 90%;
+    }
     
     #reasons span:nth-of-type(2) {
         /* learn more */
@@ -553,6 +588,14 @@ footer div p {
     
     #howlarge {
         display: block;
+    }
+    
+    #howlarge p {
+        width: 90%;
+    }
+    
+    .howpic {
+        width: 369px;
     }
     
     /* end How mq*/
