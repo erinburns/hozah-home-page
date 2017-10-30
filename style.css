@@ -1,4 +1,11 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
+.cont {
+    margin-left: 16px;
+}
 
 /* TYPOGRAPHY */
 /* import Nexa font */
@@ -9,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 header p {
     font-family: 'Nexa_Free_Bold', sans-serif;
@@ -66,6 +74,8 @@ form p {
 .howpic {
     height: auto;
     width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 /* end img & icons */
@@ -99,10 +109,6 @@ nav {
 
 .login-link {
     /* Login */
-    /* left: 52.8%;
-    right: 34.93%;
-    top: 32.81%;
-    bottom: 35.94%; */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: normal;
@@ -111,20 +117,18 @@ nav {
     color: #FFFFFF;
     display: inline;
     float: left;
+    margin-right: 10px;
 }
 
 .signup-link {
     /* signup button */ 
     padding: 5px 7px 5px 7px;
-    /* left: 67.47%;
-    right: 13.33%;
-    top: 25%;
-    bottom: 25%;*/
     width: 72px;
     height: 32px;
     background: #00E399;
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-right: 16px;
     /* Sign up link */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -156,10 +160,10 @@ header {
     padding-bottom: 2.5%;
 }
 
-.header-cont {
+/* .header-cont {
     margin: 0 auto;
     width: 90%;
-}
+} */
 
 .col-lg:first-of-type div:nth-of-type(1) { 
     padding-top: 35px;
@@ -168,8 +172,6 @@ header {
 
 .col-lg:first-of-type div:nth-of-type(1) p {
 /* No cash, no tickets, no frustrating apps: */
-    /*  left: calc(50% - 343px/2); 
-    top: 83px; */
     font-family: 'Nexa_Free_Bold', sans-serif;
     line-height: 24px;
     font-size: 16px;
@@ -179,10 +181,7 @@ header {
 
 .col-lg:first-of-type div:nth-of-type(2)  h1 {
     /* Simply park and let Hozah take care of the rest! */
-    /* width: 343px;
-     height: 50px;
-     left: calc(50% - 343px/2); 
-    top: 113px; */
+    left: 50%;
     font-family: 'Nexa_Free_Bold', sans-serif;
     line-height: 32px;
     font-size: 24px;
@@ -206,8 +205,7 @@ form {
     padding: 20px;
     margin: 0 auto; 
     display: block;
-    max-width: 343px; 
-    /* max-width: 92%; */
+    max-width: 343px;
 }
 
 form button {
@@ -310,9 +308,7 @@ section:first-of-type {
     margin-left: 32px;
 }
 
-#faqlarge div p
-/* .faqleft div p,
-.faqright div p */ {
+#faqlarge div p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 25px;
@@ -321,7 +317,7 @@ section:first-of-type {
     margin-left: 32px;
 }
 
-    /* accordion styles */
+    /* ---- accordion styles ---- */
     .tab {
       position: relative;
       margin-bottom: 1px;
@@ -419,6 +415,18 @@ section:first-of-type {
     padding-top: 32px;
 }
 
+#contact img {
+    padding-right: 10px;
+}
+
+#contact p {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+}
+
 #contact form {
     background: transparent;
     width: 343px;
@@ -469,6 +477,10 @@ footer div p {
 /* ---- MEDIA QUERIES ---- */
     /* med - tablet */
 @media screen and (min-width: 768px) {
+    .cont {
+        margin-left: 32px;
+    }
+    
     /* header */
     .login-signup {
         width: auto;
@@ -484,13 +496,16 @@ footer div p {
     /* Simply park and let Hozah take care of the rest! */
         width: 343px;
         height: 50px;
-        left: calc(50% - 343px/2);
-        top: 113px;
+        margin: 0 auto;
         font-family: 'Nexa_Free_Bold', sans-serif;
         line-height: 32px;
         font-size: 24px;
         text-align: center;
         color: #FFFFFF;    
+    }
+    
+    .col-lg:first-of-type div:nth-of-type(3)  p {
+        margin-top: 31px;
     }
     
     /* Why */
@@ -504,8 +519,11 @@ footer div p {
         display: none;
     }
     
-    #how h2 {
-        text-align: center;
+    
+    #howlarge h2,
+    #contact p,
+    #contact h2 {
+        margin: 0 auto;
     }  
     
     .howpic {
@@ -514,12 +532,15 @@ footer div p {
     
     #howsmall p {
         width: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
     }
     
-    #howsmall div {
+    /* #howsmall div {
         margin: 0 auto;
         width: 90%;
-    }
+    } */
     
     #reasons span:nth-of-type(2) {
         /* learn more */
@@ -555,6 +576,7 @@ footer div p {
     }
     
     /* contact MQs */
+    #howsmall h2,
     #contact h2, 
     #contact p {
         text-align: center;
@@ -569,6 +591,10 @@ footer div p {
     
     /* large- desktop */
 @media screen and (min-width: 1440px) {
+    .cont {
+        margin-left: 135px;
+    }
+    
     .login-signup {
         width: auto;
     }
