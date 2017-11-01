@@ -7,52 +7,48 @@
         <title>Hozah | Park Simple</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <!-- Source Sans Pro font -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
     </head>
         
     <body>
-        <div> <!-- body container -->
+      <div>   <!-- main content container -->
             <header>
-                <div> <!--  class="header-cont" header content container-->
-                    <div class="nav-cont">
-                    <a class="branding" href="http://www.hozah.com/">
-                        <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo">
-                    </a>
-                    <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent;">
-                        <a class="navbar-brand" href="http://www.hozah.com/"></a>
-                        <div> <!-- class="nav-cont" -->
-                            <div class="login-signup"> <!-- TODO: float this right on large, left on small -->
-                                <a class="login-link" href="#">Login</a> 
-                                <a class="signup-link" href="#">Sign up</a>
-                            </div> 
-                        </div>
-                        
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav mr-auto">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#why">Why use Hozah?</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#how">How it works</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#faq">FAQs</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact us</a>
-                          </li>
-                        </ul>
-                        <span class="navbar-text">
-                          <!-- Navbar text with an inline element -->
-                        </span>
-                      </div>
-                    </nav>
+                <div> <!-- header nav container -->
+                    <!-- put logo here -->
+                    <a class="cont" href="http://www.hozah.com/"> <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo"> </a>  
                     
+                    <div> <!-- always visible -->
+                        <div class="login-signup"> 
+                            <a class="login-link" href="#">Login</a> 
+                            <a class="signup-link" href="#">Sign up</a>
+                        </div> 
+                    </div>
+                    
+                    <!-- begin hamburger menu -->
+                    <label class="hamburger" for="nav-toggle"></label> 
+                    <input id="nav-toggle" type="checkbox" class="hidden" />
+            
+                    <!-- collapsable nav items -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#why">Why use Hozah?</a>
+                            </li>
+                            <li>
+                                <a href="#how">How it works</a>
+                            </li>
+                            <li>
+                                <a href="#faq">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> <!-- end header nav container -->
+                
                 <div class="container"> <!-- flex container -->
                     <div class="row container"> <!-- row container -->
                     <div class="col-lg"> <!--  text container --> 
@@ -65,7 +61,7 @@
                         </div>
                         
                         <div>
-                            <p>Learn more! 
+                            <p><a href="#why">Learn more!</a> 
                                 <!-- down triangle --> <span><svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Polygon</title>
 <desc>Created using Figma</desc>
@@ -96,7 +92,7 @@
                               </div>
                             <div class="form-group">
                                 <input type="phone" class="form-control" id="mobile"  placeholder="Mobile number">
-                              </div>
+                            </div>
                               <button type="submit" class="btn">Continue</button> 
                         </form>
                     </div> <!-- end form  container -->
@@ -112,10 +108,10 @@
                 </div>
                 <div class="row container"> <!-- flex container -->
                     <div class="col-lg"> <!-- text container -->
-                        <p>Hozah is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
+                        <p class="cont">Hozah is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                     </div> <!-- end text container -->
 
-                    <div class="col-lg"> <!-- bullets container -->
+                    <div class="col-lg cont"> <!-- bullets container -->
                         <div class="row">
                             <div class="col-sm">
                                 <p><img src="assets/images/cash.png" alt="cash icon">
@@ -143,9 +139,9 @@
                 </div> <!-- end flex container -->
                 
                 <div class="container" id="reasons">
-                    <p>
+                    <p class="cont">
                         <span class="reasons">Need more reasons?</span> 
-                        <span><a href="#">Learn more</a> 
+                        <span><a href="#how">Learn more</a> 
                             <!-- down triangle --> 
                             <span>
                                 <svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -166,14 +162,15 @@
                 </div> 
             </section> <!-- end #why -->
             
-            <section class="cont" id="howsmall">
+                <div id="how"></div>
+            <section id="howsmall"> <!-- class="cont" -->
                 <div>
                     <h2>How it works</h2>
                 </div>
                 
                 <div>
                   <div class="row">
-                      <div class="col-md">
+                      <div class="cont col-md">
                           <img src="assets/images/one.png" alt="one" class="numbers">
                           <p>Drivers sign up to Hozah, providing number plate and payment details</p>
                       </div>
@@ -181,14 +178,14 @@
                     </div>
 
                     <div class="row flex-md-row-reverse">
-                        <div class="col-md">
+                        <div class="cont col-md">
                             <p><img src="assets/images/two.png" alt="two" class="numbers">ANPR cameras detect Hozah users entering and exiting car parks</p>
                         </div>
                         <div class="col-md"><img src="assets/images/cars.png" class="howpic"></div>
                     </div>
 
                     <div class="row">
-                        <div class="col-md">
+                        <div class="cont col-md">
                             <p><img src="assets/images/three.png" alt="three" class="numbers">Hozah automatically charges drivers for length-of-stay, and then sends the parking fee to the car park owner/operator</p>
                         </div>
                         <div class="col-md"><img src="assets/images/carpark.png" class="howpic"></div><br>
@@ -196,12 +193,12 @@
                 </div>
             </section>
                 
-            <section id="howlarge" class="container">
+            <section id="howlarge">
                 <div>
                     <h2>How it works</h2>
                 </div>
 
-                <div> 
+                <div class="container"> 
                       <div class="d-flex flex-row">
                           <div class="p-2">
                               <img src="assets/images/laptop.png" class="howpic">
@@ -222,15 +219,17 @@
                             </div>
                         </div>
                     </div>
+                </div>
         </section>
             
+                <div id="faq"></div>
             <section id="faqsmall">
-                <div class="container">
+                <div>
                     <h2>FAQs</h2>
                 </div>
                 
                 <!-- Accordion -->
-                <div id="accordion">
+                <div id="accordion" class="container">
                     <div class="tab blue">
                       <input id="tab-one" type="radio" name="tabs2">
                       <label for="tab-one">Lorem ipsum dolor sit amet?</label>
@@ -319,9 +318,9 @@
                             <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
                         </div>
                     </div>
-                    <p>
+                    <p class="cont">
                         <span class="reasons">Got questions?</span> 
-                        <span><a href="#">Learn more</a> 
+                        <span><a href="#contact">Learn more</a> 
                             <!-- down triangle --> 
                             <span>
                                 <svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -346,7 +345,7 @@
                     <h2>Contact us</h2>
                 </div>
                 <div>
-                    <p><img src="assets/images/envelope.png">info@hozah.com</p>
+                    <p><img src="assets/images/envelope.png" alt="envelope icon"> info@hozah.com</p>
                 </div>
                 <div> <!-- form  container -->
                     <form id="bottomform">
@@ -370,7 +369,7 @@
                     <span><a href="#">Click here</a></span>
                 </p>
             </section>
-            </div> <!-- end main content container -->
+            <!--  </div> end main content container -->
             <footer>
                 <div> <!-- footer container -->
                     <p>

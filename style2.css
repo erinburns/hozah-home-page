@@ -81,7 +81,142 @@ form p {
 /* end img & icons */
 
 /* NAVIGATION */
+/* begin responsive hamburger menu */
+    /* Adapted from http://codepen.io/matt-clayson/pen/QpPLLZ
+    Thank you to http://codepen.io/matt-clayson/ 
+    */ 
+
+.hamburger {
+  height: 5%;
+  width: 15%;
+  padding: 4%;
+  float: right;
+  cursor: pointer;
+}
+
+.hamburger:before {
+    content: "";
+    display: block;
+    /*  background-color: rgb(243, 243, 243);  #f3f3f3 white */
+    background-color: rgb(0,0,0);
+    width: 40px;
+    height: 4px;
+}
+
+.hamburger:after {
+  content: "";
+  display: block;
+  /*  background-color: rgb(243, 243, 243);  #f3f3f3 white */
+    background-color: rgb(0,0,0);
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  box-shadow: 0px 8px 0 rgb(0,0,0); /*  was #f3f3f3 white rgb(243, 243, 243) */
+}
+
+header input[type="checkbox"]:checked ~ nav {
+  max-height: 350px;  /* adjusts the height of the expanded hamburger menu in mobile view */
+}
+
 nav {
+    background-color: transparent;
+    margin: 0;
+    max-height: 0; 
+    overflow: hidden; 
+    clear: both;
+    transition: max-height .3s cubic-bezier(0.63, 0, 0.25, 1); 
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+nav li {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+nav a {
+    color: black; 
+    display: block;
+    padding: .4em;
+    font-family: Comfortaa, 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-weight: 700; 
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+
+nav a:hover,
+nav a:focus,
+nav label:hover,
+nav label:focus {
+    /* background-color: rgb(192,4,63); highlight on nav menu item hover */
+    border-bottom: 2px solid rgb(68,19,73); /* logo purple */
+}
+
+
+/* this media query won't display hamburger menu on screens larger than 700px */
+
+@media (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+    
+  nav {
+    background: transparent;
+    border: 0 !important; 
+    max-height: none;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: row; /* Safari */
+    flex-direction:         row;
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap:         wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;  /* centers items vertically */
+      margin-left: 7%;
+  }
+    
+  nav ul, nav li, nav li a {
+    display: inline-block;
+  }
+     
+  nav a {
+    display: inline-block;
+    padding: 22px 1em;
+    /* height: 10%; */
+  }
+    
+    nav a:hover,
+    nav a:focus,
+    nav label:hover,
+    nav label:focus {
+        /* background-color: rgb(192,4,63); highlight on nav menu item hover */
+        border-top: 2px solid rgb(68,19,73); /* logo purple */
+        padding: 18px 1em;
+       /* height: 10%; */
+    }
+}
+
+.hidden {
+    position: relative; 
+   /*  visibility: hidden; */
+    display: none; 
+}
+
+#search {
+    padding: 0 5% 0 0;
+}
+    /* end responsive hamburger menu styles */
+
+/* nav {
     display: inline-block;
     float: right;
 }
@@ -97,19 +232,19 @@ nav {
 .nav-cont {
     height: auto;
     width: auto;
-    padding: 2.5%;
+    padding: 2.5%; <------  */
     /* display: flex;
     flex-direction: row; */
-}
+/* }
 
 .login-signup {
     display: inline;
     width: auto;
 }
 
-.login-link {
+.login-link { */
     /* Login */
-    font-family: 'Source Sans Pro', sans-serif;
+   /* font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: normal;
     font-size: 14px;
@@ -120,17 +255,17 @@ nav {
     margin-right: 10px;
 }
 
-.signup-link {
+.signup-link { */
     /* signup button */ 
-    padding: 5px 7px 5px 7px;
+   /* padding: 5px 7px 5px 7px;
     width: 72px;
     height: 32px;
     background: #00E399;
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-right: 16px;
+    margin-right: 16px; */
     /* Sign up link */
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     line-height: normal;
     font-size: 14px;
@@ -139,16 +274,16 @@ nav {
     display: inline;
 }
 
-.nav-link:nth-of-type(2) { 
+.nav-link:nth-of-type(2) {  */
     /* Sign up link */
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     font-size: 14px;
     text-align: center;
     color: #333333;
-}
+} */
 /* end NAV */
 
 /* HEADER CONTENT */
@@ -190,8 +325,7 @@ header {
 }
 
 
-.col-lg:first-of-type div:nth-of-type(3) p,
-.col-lg:first-of-type div:nth-of-type(3) a {
+.col-lg:first-of-type div:nth-of-type(3) p {
     /* header learn more */
     text-decoration: underline;
     color: #FFFFFF;
@@ -223,23 +357,34 @@ form button {
 }
 
 
-input {
+form input {
     width: 90%;
     height: 48px;
     padding-bottom: 20px;
 }
 
-input:nth-of-type(1) {
+form input:nth-of-type(1) {
     padding-top: 11px;
 }
-
-/* WHY */
 
 #why img {
     margin-right: 25px;
     float: left;
 }
 
+/* p img:nth-of-type(2) {
+    margin-right: 24px;
+} *
+
+p img:nth-of-type(3) {
+    margin-right: 10px;
+}
+
+p img:nth-of-type(4) {
+    margin-right: 37px;
+}
+
+/* WHY */
 section:first-of-type {
     background: #F9F9F9;
     padding-top: 24px;
