@@ -118,6 +118,7 @@ nav {
     display: inline;
     float: left;
     margin-right: 10px;
+    margin-top: 5px;
 }
 
 .signup-link {
@@ -207,6 +208,7 @@ form {
     margin: 0 auto; 
     display: block;
     max-width: 343px;
+    margin-top: 37px;
 }
 
 form button {
@@ -240,9 +242,27 @@ input:nth-of-type(1) {
     float: left;
 }
 
+.col-sm p {
+    /* keep text on 1 line */
+    min-width: auto;
+}
+
+
 section:first-of-type {
     background: #F9F9F9;
     padding-top: 24px;
+}
+
+#reasons, 
+#faqsmall .cont,
+#faqlarge .cont {
+     border-top: 1px solid #E5E5E5;
+}
+
+#reasons > p,
+#faqsmall .cont,
+#faqlarge .cont {
+    padding: 30px 0 32px 0;
 }
 
 .reasons {
@@ -305,6 +325,11 @@ section:first-of-type {
     text-align: left;
     color: #666666;
     margin-left: 32px;
+}
+
+#faqlarge .cont,
+#faqsmall .cont {
+    border-top: 1px solid #E5E5E5;
 }
 
     /* ---- accordion styles ---- */
@@ -475,7 +500,7 @@ footer div p {
     .login-signup {
         width: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
     }
     
     form {
@@ -501,6 +526,10 @@ footer div p {
     /* Why */
     #why div p {
         width: auto;
+    }
+    
+    #why .row {
+        padding-right: 1px;
     }
     
     /* How MQ */
@@ -588,6 +617,10 @@ footer div p {
     
     .login-signup {
         width: auto;
+    }
+    
+    header form {
+        margin-top: 24px;
     }
     
     form {
