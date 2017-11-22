@@ -1,3 +1,4 @@
+
 body {
     width: 100%;
     overflow-x: hidden;
@@ -33,7 +34,7 @@ h2 {
     font-family: 'Nexa_Free_Bold', sans-serif;
     font-size: 24px;
     color: #009FE3;
-    /* margin-left: 16px; */
+    margin-left: 32px;
     padding-top: 32px;
 }
 
@@ -91,14 +92,6 @@ nav {
     float: right;
 }
 
-nav.navbar {
-    padding-right: 0;
-}
-
-#navbarText {
-    margin-right: 60px;
-}
-
 #navbarText a {
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
@@ -121,10 +114,6 @@ nav.navbar {
     position: relative;
 }
 
-/* .logsign-right {
-    display: none;
-} */
-
 .login-link {
     /* Login */
     font-family: 'Source Sans Pro', sans-serif;
@@ -136,7 +125,7 @@ nav.navbar {
     display: inline;
     float: left;
     margin-right: 10px;
-   /* margin-top: 5px; */
+    margin-top: 5px;
 }
 
 .signup-link {
@@ -147,7 +136,7 @@ nav.navbar {
     background: #00E399;
     box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-   /* margin-right: 16px; */
+    margin-right: 16px;
     /* Sign up link */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
@@ -158,7 +147,7 @@ nav.navbar {
     display: inline;
 }
 
-.signup-link { 
+.nav-link:nth-of-type(2) { 
     /* Sign up link */
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
@@ -168,7 +157,6 @@ nav.navbar {
     text-align: center;
     color: #333333;
 }
-
 /* end NAV */
 
 /* HEADER CONTENT */
@@ -256,10 +244,6 @@ input:nth-of-type(1) {
 
 /* WHY */
 
-#why h2 {
-    margin-left: 16px;
-}
-
 #why img {
     margin-right: 25px;
     float: left;
@@ -307,19 +291,7 @@ section:first-of-type {
     margin-left: 16px;
     margin-right: 16px;
 }
-
-.why-wrapper {
-    margin-bottom: 20px;
-    margin-left: 16px;
-}
-
-.why-text {
-    margin-left: 16px;
-}
-
-#reasons p {
-    padding: 30px 0 32px 0;
-}
+    
 
 #reasons p span a,
 #faqlarge span:nth-of-type(2),
@@ -335,10 +307,6 @@ section:first-of-type {
 /* end Why */
 
 /* HOW */
-#howsmall h2 {
-    margin-left: 16px;
-}
-
 #howsmall p,
 #howlarge p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -364,10 +332,6 @@ section:first-of-type {
     background-color: #F9F9F9;
 }
 
-#faqsmall h2 {
-    margin-left: 16px;
-}
-
 #faqlarge {
     display: none;
 }
@@ -379,6 +343,7 @@ section:first-of-type {
     line-height: 25px;
     text-align: left;
     color: #333333;
+    margin-left: 32px;
 }
 
 #faqlarge div p {
@@ -387,26 +352,17 @@ section:first-of-type {
     line-height: 25px;
     text-align: left;
     color: #666666;
+    margin-left: 32px;
 }
 
 .itemborder {
     border-bottom: 1px solid #E5E5E5; 
-}
-
-.faqborder {
-    border-bottom: 1px solid #E5E5E5; 
     margin-left: 16px;
-    margin-right: 16px; 
+    margin-right: 16px;
 }
-
-/* #got-question {
-    border-top: 1px solid #E5E5E5;
-    width: 90%;
-    padding: 30px 0 32px 0;
-} */
 
 #questionlg {
-    /* border-top: 1px solid #E5E5E5;  */
+    border-top: 1px solid #E5E5E5;  
     width: 90%; 
     padding: 30px 0 32px 0; 
 }
@@ -414,12 +370,8 @@ section:first-of-type {
  .faqlgflex {
     display: flex;
     flex-direction: row;
-    padding: 1px;
+    justify-content: flex-start;
 } 
-
-.faqlgflex > div {
-    margin: 5px;
-}
 
     /* ---- accordion styles ---- */
     .tab {
@@ -520,37 +472,24 @@ section:first-of-type {
 #contact h2 {
     color: #ffffff;
     padding-top: 32px;
-    padding-bottom: 16px;
-    margin-left: 16px;
 }
 
 #contact img {
     padding-right: 10px;
 }
 
-    #contact p {
-        color: #ffffff;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        line-height: 20px;
-        margin-left: 16px;
-        padding-bottom: 26px;
-    }
+#contact p {
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 32px;
+}
 
-        #contact form {
-        background: transparent;
-        width: 343px;
-    }
-
-    #bottomform input,
-    #bottomform button {
-        width: 343px;
-    }
-    
-    #bottomform div:nth-of-type(3) input {
-        /* resize message input */
-        height: 116px;
-    }
+#contact form {
+    background: transparent;
+    width: 343px;
+}
 /* end contact */
 
 /* OPERATOR */
@@ -602,28 +541,16 @@ footer div p {
         margin-left: 32px;
     }
     
-     .faqborder {
+    .itemborder {
         margin-left: 32px;
         margin-right: 32px;
-    } 
+    }
     
     /* header */
-    header {
-        height: 733px;    
-    }
-    
     .login-signup {
-        display: none;
-    }
-    
-    .logsign-right {
         width: auto;
         display: flex;
-        flex-direction: row;
-    }
-    
-    .nav-item:nth-of-type(4) {
-        padding-right: 47px;
+        flex-direction: row; 
     }
     
     form {
@@ -647,20 +574,13 @@ footer div p {
     }
     
     /* Why */
-    #why {
-        height: 440px;
-    }
     #why div p {
-        width: 90%;
+        width: auto;
     }
     
     #why .row {
         padding-right: 1px;
     }
-    
-    /*span.reasons {
-        margin-left: 32px;
-    }*/
     
     /* How MQ */
     /* move how it works to center */
@@ -696,10 +616,6 @@ footer div p {
         margin-left: 32px;
     }
     
-    span.reasons {
-        margin-left: 0px;
-    }
-    
     #reasons span:nth-of-type(2) {
         /* learn more */
         margin-left: 11px;
@@ -730,17 +646,9 @@ footer div p {
         background-color: #F9F9F9;
     }
     
-     #faqlarge p {
-        width: 88%;
-    } 
-    
-   /* #faqlarge div p {
-        margin-left: 32px;
-    } 
-    
-    #faqlarge h3 {
-        margin-left: 32px;
-    } */
+    #faqlarge p {
+        width: 340px;
+    }
     
     /* end FAQ MQs*/
     
@@ -751,30 +659,6 @@ footer div p {
         text-align: center;
     }
     
-    #contact {
-        height: 556px;
-    }
-    
-    #contact h2 {
-        padding-top: 48px;
-    }
-    
-    #contact p {
-        padding-top: 37px;
-        padding-bottom: 14px;
-    }
-    
-    #bottomform input,
-    #bottomform button {
-        max-width: 343px; 
-        /* max-width: 85%; */
-    }
-    
-    #bottomform div:nth-of-type(3) input {
-        /* resize message input */
-        height: 116px;
-    }
-    
     /* Footer MQs */
     footer div p {
         width: 461px;
@@ -783,53 +667,18 @@ footer div p {
 } /* end med-tablet MQ */
     
     /* large- desktop */
-@media screen and (min-width: 1440px) { 
+@media screen and (min-width: 1440px) {
     .cont {
-        padding-left: 103px;
+        margin-left: 135px;
     }
     
-    .logo {
-        width: 169.64px;
-        height: 48px;
-        margin-top: 11px;
-    }
-    
-    .nav-item:nth-of-type(4) {
-        padding-right: 180px;
-    }
-    
-     .faqborder {
+    .itemborder {
         margin-left: 135px;
         margin-right: 135px;
-    } 
-    
-    section h2 {
-        padding-top: 64px;
     }
     
-    .col-lg:first-of-type div:nth-of-type(1) p {
-        font-size: 24px;
-        line-height: 37px;
-        text-align: left;
-    }
-    
-    .col-lg:first-of-type div:nth-of-type(2)  h1 {
-        font-size: 48px;
-        line-height: 56px;
-        width: 669px;
-        text-align: left;
-    }
-    
-    .col-lg:first-of-type div:nth-of-type(3)  p {
-        /* learn more*/
-        font-size: 18px;
-        line-height: 21px;
-        padding-top: 32px;
-        text-align: left;
-    }
-    
-    header {
-        height: 589px;
+    .login-signup {
+        width: auto;
     }
     
     header form {
@@ -840,13 +689,8 @@ footer div p {
         width: 369px;
     }
     
-    /*  why MQ */
-    #why {
-        height: 483px;
-    }
-    
-    .whyreason {
-        margin-left: 16px;
+    .col-lg:first-of-type div:nth-of-type(2) h1 {
+        width: 669px;
     }
     
     /* How MQs */
@@ -857,13 +701,10 @@ footer div p {
     #howlarge {
         display: block;
         margin-bottom: 96px;
-        height: 571px;
     }
     
     #howlarge h2 {
         text-align: center;
-        padding-bottom: 71px;
-        padding-top: 96px;
     }
     
     #howlarge p {
@@ -872,90 +713,27 @@ footer div p {
     
     .howpic {
         width: 369px;
-    }   /* end How mq*/
-    
-    
-    /*faq MQ */
-    #faqlarge {
-        height: 842px;  
-        /* margin-left: 135px; */
     }
     
-    #faqlarge h2 {
-        padding-bottom: 71px;
-    }
+    /* end How mq*/
     
     #faqlarge p {
-        padding-bottom: 36px;
-    }
-    
-    #questionlg {
-        margin-left: 0px;
-    }
-    /* .faqlgflex {
-        margin: 0 auto;
-        width: 96%;
-    } */
-    
-    #faqlarge div p {
-        width: 98%;
-    } 
-    
-    /* #faqlarge h3 {
-        margin-left: 135px;
-    } */
-    
-    
-     .faqlgflex {
-        padding-bottom: 36px;
-    }
-    
-     /* #faqlarge p {
         width: 569px;
-    } */
+    }
     
-     /* .faqleft {
-        width: 50%; 
+     .faqleft {
+       /* width: 50%; */
         margin-left: 103px; 
-    } */
+    }
     
     /* .faqright {
         width: 50%;
     }  */
-    
     #questionlg {
-        padding-top: 18px;
-    } 
-    
-    /* contact MQ */
-    #contact {
-        height: 678px;
-    }
-    
-    #contact h2 {
-        padding-top: 64px;
-    }
-    
-    #contact p {
-        padding-top: 63px;
-        padding-bottom: 24px;
-    }
-    
-    #bottomform input,
-    #bottomform button {
-        width: 368px;
-    }
-    
-    #bottomform div:nth-of-type(3) input {
-        /* resize message input */
-        height: 116px;
+        margin-left: 135px;
     }
     
     /* Footer MQs */
-    #operator, footer {
-        height: 80px;    
-    }
-    
     footer div p {
         width: 1170px;
     }

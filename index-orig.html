@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,42 +17,43 @@
     <body>
        <!-- <div>  main content container -->
             <header>
-                <div class="container">
-                <a class="" href="http://www.hozah.com/">
-                <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo">
-            </a>
-            <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent;">
-                <a class="navbar-brand" href="http://www.hozah.com/"></a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                <!--  <div>  class="header-cont" header content container-->
+                <div class="nav-cont">
+                    <a class="cont" href="http://www.hozah.com/">
+                        <img src="assets/images/hozah-logo.png" alt="Hozah logo" class="logo">
+                    </a>
+                    <nav class="navbar navbar-expand-md navbar-light" style="background-color: transparent;">
+                        <a class="navbar-brand" href="http://www.hozah.com/"></a>
+                        <div class="float-md-right"> 
+                            <div class="login-signup"> 
+                                <a class="login-link" href="#">Login</a> 
+                                <a class="signup-link" href="#">Sign up</a>
+                            </div> 
+                        </div>
+                        
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse float-md-left" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item">
                             <a class="nav-link" href="#why">Why use Hozah?</a>
-                        </li>
-                        <li class="nav-item">
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link" href="#how">How it works</a>
-                        </li>
-                        <li class="nav-item">
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link" href="#faq">FAQs</a>
-                        </li>
-                        <li class="nav-item">
+                          </li>
+                          <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact us</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text">
-                        <!-- Navbar text with an inline element -->
-                    </span>
-                </div>
-                <div class="login-signup d-flex align-items-center float-sm-left float-md-right float-lg-right">
-                    <a class="login-link" href="#">Login</a>
-                    <a class="signup-link" href="#">Sign up</a>
-                </div>
-            </nav>
-                </div> <!-- container -->
+                          </li>
+                        </ul>
+                        <span class="navbar-text">
+                          <!-- Navbar text with an inline element -->
+                        </span>
+                      </div>
+                    </nav>
                     
                 <div class="container"> <!-- flex container -->
                     <div class="row container"> <!-- row container -->
@@ -102,95 +104,70 @@
                     </div> <!-- end form  container -->
                     </div><!-- row container -->
                 </div> <!-- end flex container -->
-            <!--  </div> end header content container-->
+            </div> <!-- end header content container-->
             </header>
             
-            <div> <!-- main content container -->
-                <section id="why">
-            <!-- section container -->
-            <div class="container">
-                <div class="row">
-                    <div class="w-100">
-                        <h2 class="">Why use Hozah?</h2>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <p class="why-text">Hozah is a fully automated parking system, which uses number plate recognition cameras to detect
-                                when you enter and leave a car park, and bill you accurately. </p>
-                        </div>
-                    </div>
-                    <!-- text container -->
-
-                    <!-- end text container -->
-
-                    <!-- bullets container -->
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="row">
-                            <div class="why-wrapper">
-                                <p>
-                                    <img src="assets/images/cash.png" alt="cash icon"> No need to carry cash
-                                </p>
-                            </div>
-                            <div class="why-wrapper">
-                                <p>
-                                    <img src="assets/images/clock.png" alt="clock icon"> No waiting at the ticket machine
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                        <div class="row">
-                            <div class="why-wrapper">
-                                <p>
-                                    <img src="assets/images/mobile.png" alt="mobile icon"> No need to download an app
-                                </p>
-                            </div>
-                            <div class="why-wrapper">
-                                <p class="bold">
-                                    <img src="assets/images/hicon.png" alt="H with tick mark icon"> Simply park and go
-                                </p>
-                                <!-- TODO: make bold -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end bullets container -->
-                    <!-- end flex container -->
-                    <div class="itemborder w-100"></div>
-                    <div class="col-12" id="reasons">
-                        <div class="row">
-                            <p class="whyreason">
-                                <span class="reasons">Need more reasons?</span>
-                                <span>
-                                    <a href="#how">Learn more</a>
-                                    <!-- down triangle -->
-                                    <span>
-                                        <svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>Polygon</title>
-                                            <desc>Created using Figma</desc>
-                                            <g id="Canvas" transform="translate(-456 144)">
-                                                <g id="Polygon">
-                                                    <use xlink:href="#path0_fill" transform="matrix(-1 -1.55941e-16 1.55941e-16 -1 472 -135)" fill="#009FE3" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <path id="path0_fill" d="M 8.24407 0.872872C 8.64284 0.41241 9.35716 0.41241 9.75593 0.872872L 15.3613 7.34535C 15.9221 7.99299 15.4621 9 14.6053 9L 3.39467 9C 2.53792 9 2.07787 7.99299 2.63874 7.34535L 8.24407 0.872872Z"
-                                                />
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                    <!-- svg container -->
-                                </span>
-                            </p>
-                        </div>
-                    </div>
+            <div> <!-- main content container --> 
+            <section id="why"> <!-- section container -->
+                <div> 
+                    <h2 class="cont">Why use Hozah?</h2>
                 </div>
-            </div>
-            <!-- end #reasons -->
-        </section>
-        <!-- end #why -->
-                
-                
-           
+                <div class="row container"> <!-- flex container -->
+                    <div class="col-lg"> <!-- text container -->
+                        <p class="cont">Hozah is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
+                    </div> <!-- end text container -->
+
+                    <div class="col-lg cont"> <!-- bullets container -->
+                        <div class="row">
+                            <div class="col-sm">
+                                <p><img src="assets/images/cash.png" alt="cash icon">
+                                    No need to carry cash
+                                </p> 
+                            </div>
+                            <div class="col-sm">
+                                <p><img src="assets/images/clock.png" alt="clock icon">
+                                    No waiting at the ticket machine
+                                </p> 
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-sm">
+                                <p><img src="assets/images/mobile.png" alt="mobile icon">
+                                    No need to download an app
+                                </p> 
+                            </div>
+                            <div class="col-sm">
+                                <p class="bold"><img src="assets/images/hicon.png" alt="H with tick mark icon">
+                                    Simply park and go
+                                </p>  
+                            </div> <!-- TODO: make bold -->
+                        </div>
+                    </div> <!-- end bullets container -->
+                </div> <!-- end flex container -->
+                <div class="itemborder"></div>
+                <div class="container" id="reasons">
+                    <p class="cont">
+                        <span class="reasons">Need more reasons?</span> 
+                        <span><a href="#how">Learn more</a> 
+                            <!-- down triangle --> 
+                            <span>
+                                <svg width="14" height="9" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Polygon</title>
+                                <desc>Created using Figma</desc>
+                                <g id="Canvas" transform="translate(-456 144)">
+                                <g id="Polygon">
+                                <use xlink:href="#path0_fill" transform="matrix(-1 -1.55941e-16 1.55941e-16 -1 472 -135)" fill="#009FE3"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <path id="path0_fill" d="M 8.24407 0.872872C 8.64284 0.41241 9.35716 0.41241 9.75593 0.872872L 15.3613 7.34535C 15.9221 7.99299 15.4621 9 14.6053 9L 3.39467 9C 2.53792 9 2.07787 7.99299 2.63874 7.34535L 8.24407 0.872872Z"/>
+                                </defs>
+                                </svg>
+                            </span> <!-- svg container -->
+                        </span>
+                    </p>
+                </div> <!-- end #reasons -->
+            </section> <!-- end #why -->
+            
                 <div id="how"></div>
             <section id="howsmall"> <!-- class="cont" -->
                 <div>
@@ -200,8 +177,8 @@
                 <div>
                   <div class="row">
                       <div class="cont col-md">
-                          <p><img src="assets/images/one.png" alt="one" class="numbers">
-                          Drivers sign up to Hozah, providing number plate and payment details</p>
+                          <img src="assets/images/one.png" alt="one" class="numbers">
+                          <p>Drivers sign up to Hozah, providing number plate and payment details</p>
                       </div>
                       <div class="col-md"><img src="assets/images/laptop.png" class="howpic"></div><br>
                     </div>
@@ -265,7 +242,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div>
 
                     <div class="tab blue">
@@ -274,7 +251,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div>
 
                     <div class="tab blue">
@@ -283,7 +260,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div>
 
                     <div class="tab blue">
@@ -292,7 +269,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div>
 
                     <div class="tab blue">
@@ -301,7 +278,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div>
 
                     <div class="tab blue">
@@ -310,7 +287,7 @@
                       <div class="tab-content">
                         <p>Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately. </p>
                       </div>
-                        <div class="faqborder"></div>
+                        <div class="itemborder"></div>
                     </div> 
                 </div> <!-- end accordion -->
                 
@@ -340,19 +317,12 @@
                 
                 <section id="faqlarge">
                     <!-- displayed on large screens -->
-                    <div class="container">
                     <div>
-                        <h2>FAQs</h2> <!-- class="cont" -->
+                        <h2 class="cont">FAQs</h2>
                     </div>
                     
                    <div class="faqlgflex"> 
-                        <div class="faqleft col-lg-6 col-md-6 col-sm-6"> 
-                            <div class="row"> 
-                            <div class="w-100">
-                                <h3>Lorem ipsum dolor sit amet?</h3> 
-                                <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
-                            </div>
-
+                        <div class="faqleft">  
                             <div>
                                 <h3>Lorem ipsum dolor sit amet?</h3> 
                                 <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
@@ -362,11 +332,14 @@
                                 <h3>Lorem ipsum dolor sit amet?</h3> 
                                 <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
                             </div>
-                            </div> <!-- row -->
+
+                            <div>
+                                <h3>Lorem ipsum dolor sit amet?</h3> 
+                                <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
+                            </div>
                         </div> <!-- faqleft -->
 
-                        <div class="faqright col-lg-6 col-md-6 col-sm-6">
-                            <div class="row"> 
+                        <div class="faqright">
                             <div>
                                 <h3>Lorem ipsum dolor sit amet?</h3> 
                                 <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
@@ -381,12 +354,11 @@
                                 <h3>Lorem ipsum dolor sit amet?</h3> 
                                 <p> Is a fully automated parking system, which uses number plate recognition cameras to detect when you enter and leave a car park, and bill you accurately.</p>
                             </div>
-                            </div> <!-- row -->
                         </div> <!-- faqright -->
                     </div>  <!--  faqlgflex -->
-                          
-                        <div class="itemborder w-100"></div>
-                    <div id="questionlg" class="w-100"> <!-- class="cont" -->
+                    
+                    
+                    <div id="questionlg"> <!-- class="cont" -->
                         <span class="reasons">Got a question?</span> 
                         <span><a href="#contact">Learn more</a> 
                             <!-- down triangle --> 
@@ -406,7 +378,6 @@
                             </span> <!-- svg container -->
                         </span>
                     </div>
-                    </div> <!-- container -->
             </section> <!-- end faqlarge -->
             
             <section id="contact">

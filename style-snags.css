@@ -544,7 +544,8 @@ section:first-of-type {
 
     #bottomform input,
     #bottomform button {
-        width: 343px;
+         max-width: 343px;
+       /* max-width: 85%;  */
     }
     
     #bottomform div:nth-of-type(3) input {
@@ -658,10 +659,6 @@ footer div p {
         padding-right: 1px;
     }
     
-    /*span.reasons {
-        margin-left: 32px;
-    }*/
-    
     /* How MQ */
     /* move how it works to center */
     #howlarge {
@@ -694,10 +691,6 @@ footer div p {
     #howsmall div:nth-of-type(2) div:nth-of-type(2) img {
         /* add left margin to 2nd pic */
         margin-left: 32px;
-    }
-    
-    span.reasons {
-        margin-left: 0px;
     }
     
     #reasons span:nth-of-type(2) {
@@ -766,8 +759,7 @@ footer div p {
     
     #bottomform input,
     #bottomform button {
-        max-width: 343px; 
-        /* max-width: 85%; */
+        width: 338px; 
     }
     
     #bottomform div:nth-of-type(3) input {
@@ -807,26 +799,9 @@ footer div p {
         padding-top: 64px;
     }
     
-    .col-lg:first-of-type div:nth-of-type(1) p {
-        font-size: 24px;
-        line-height: 37px;
-        text-align: left;
-    }
-    
-    .col-lg:first-of-type div:nth-of-type(2)  h1 {
-        font-size: 48px;
-        line-height: 56px;
-        width: 669px;
-        text-align: left;
-    }
-    
-    .col-lg:first-of-type div:nth-of-type(3)  p {
-        /* learn more*/
-        font-size: 18px;
-        line-height: 21px;
-        padding-top: 32px;
-        text-align: left;
-    }
+    /* .login-signup {
+        width: auto;
+    } */
     
     header {
         height: 589px;
@@ -845,8 +820,9 @@ footer div p {
         height: 483px;
     }
     
-    .whyreason {
-        margin-left: 16px;
+    
+    .col-lg:first-of-type div:nth-of-type(2) h1 {
+        width: 669px;
     }
     
     /* How MQs */
@@ -889,9 +865,6 @@ footer div p {
         padding-bottom: 36px;
     }
     
-    #questionlg {
-        margin-left: 0px;
-    }
     /* .faqlgflex {
         margin: 0 auto;
         width: 96%;
