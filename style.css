@@ -95,9 +95,9 @@ nav.navbar {
     padding-right: 0;
 }
 
-#navbarText {
+/*#navbarText {
     margin-right: 60px;
-}
+}*/
 
 #navbarText a {
     color: #fff;
@@ -248,6 +248,9 @@ input {
     width: 90%;
     height: 48px;
     padding-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 input:nth-of-type(1) {
@@ -344,7 +347,7 @@ section:first-of-type {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    text-align: justify;
+    text-align: left;
     width: 90%;
 }
 
@@ -544,7 +547,7 @@ section:first-of-type {
 
     #bottomform input,
     #bottomform button {
-        width: 343px;
+        max-width: 91%;
     }
     
     #bottomform div:nth-of-type(3) input {
@@ -597,8 +600,8 @@ footer div p {
 /* ---- MEDIA QUERIES ---- */
     /* med - tablet */
 @media screen and (min-width: 768px) {
-    .cont,
-    #questionlg {
+    .cont
+    /* #questionlg */ {
         margin-left: 32px;
     }
     
@@ -620,6 +623,10 @@ footer div p {
         width: auto;
         display: flex;
         flex-direction: row;
+    }
+    
+    #navbarText {
+        margin-right: 20px;
     }
     
     .nav-item:nth-of-type(4) {
@@ -809,7 +816,7 @@ footer div p {
     
     .col-lg:first-of-type div:nth-of-type(1) p {
         font-size: 24px;
-        line-height: 37px;
+        line-height: 32px;
         text-align: left;
     }
     
@@ -838,6 +845,22 @@ footer div p {
     
     form {
         width: 369px;
+    }
+    
+    form p {
+        font-size: 24px;
+        color: #333333;
+        line-height: 28px;
+    }
+    
+    .btn {
+        font-size: 18px;
+    }
+    
+    .navbar {
+        height: 96px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     
     /*  why MQ */
@@ -874,6 +897,10 @@ footer div p {
         width: 369px;
     }   /* end How mq*/
     
+    .signup-link {
+        height: 48px;
+        width: 100px;
+    }
     
     /*faq MQ */
     #faqlarge {
